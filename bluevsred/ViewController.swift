@@ -21,9 +21,9 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func hideRedPicture(sender: AnyObject) { redPicture.hidden = true
+    @IBAction func hideRedPicture(sender: AnyObject) { bluePicture.hidden = false
     }
-    @IBAction func hideBluePicture(sender: AnyObject) { bluePicture.hidden = true
+    @IBAction func hideBluePicture(sender: AnyObject) { redPicture.hidden = false
     }
 
 
