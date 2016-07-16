@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var bluePicture: UIImageView!
+    @IBOutlet weak var redPicture: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +20,10 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    @IBAction func hideRedPicture(sender: AnyObject) { redPicture.hidden = true
+    }
+    @IBAction func hideBluePicture(sender: AnyObject) { bluePicture.hidden = true
     }
 
 
